@@ -1,0 +1,4 @@
+.container { margin: 0 auto; }
+.mark { display: grid; place-items: center; width: 58px; height: 58px; margin: 0 auto 21px; border: 1px solid #c49c76; border-radius: 50%; color: #745039; font-family: var(--serif); font-size: 1.12rem; letter-spacing: .05em; }
+.title { margin: 0; color: var(--ink); font-family: var(--serif); font-size: clamp(2.05rem, 8vw, 3rem); font-weight: 500; letter-spacing: -.045em; line-height: 1.08; }
+.description { max-width: 310px; margin: 15px auto 0; color: var(--muted); font-size: .96rem; line-height: 1.7; }
