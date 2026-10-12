@@ -14,7 +14,7 @@ export default function VoteStats({ votes, totalVotes, positiveRate }: VoteStats
       <p className={css.stat}>Neutral <strong>{votes.neutral}</strong></p>
       <p className={css.stat}>Bad <strong>{votes.bad}</strong></p>
       <p className={css.stat}>Total <strong>{totalVotes}</strong></p>
-      <p className={`${css.stat} ${css.positive}`}>Positive <strong>{positiveRate}%</strong></p>
+      <p className={css.stat}>Positive <strong>{positiveRate}%</strong></p>
     </div>
   )
 }
