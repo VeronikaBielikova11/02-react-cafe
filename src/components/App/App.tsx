@@ -23,18 +23,13 @@ export default function App() {
 
   return (
     <main className={css.app}>
-      <div className={css.card}>
-        <span className={css.eyebrow}>A LITTLE NOTE FROM US</span>
-        <CafeInfo />
-        <div className={css.divider} aria-hidden="true"><span>✳</span></div>
-        <VoteOptions onVote={handleVote} onReset={resetVotes} canReset={totalVotes > 0} />
-        {totalVotes > 0 ? (
-          <VoteStats votes={votes} totalVotes={totalVotes} positiveRate={positiveRate} />
-        ) : (
-          <Notification />
-        )}
-        <p className={css.footer}>Made with care & a little caffeine <span aria-hidden="true">♥</span></p>
-      </div>
+      <CafeInfo />
+      <VoteOptions onVote={handleVote} onReset={resetVotes} canReset={totalVotes > 0} />
+      {totalVotes > 0 ? (
+        <VoteStats votes={votes} totalVotes={totalVotes} positiveRate={positiveRate} />
+      ) : (
+        <Notification />
+      )}
     </main>
   )
 }
